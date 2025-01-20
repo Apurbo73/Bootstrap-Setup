@@ -16,10 +16,14 @@
     <title>Hello</title>
   </head>
   <body>
-    <h1 class="text-center mt-3 mb-3 text-danger">Hello from Bootstrap</h1>
+    <h1 class="text-center mt-3 mb-3">
+      <strong class="text-primary">Joy</strong>
+      <strong class="text-danger">Sita</strong> 
+      <strong class="text-success">Ram</strong>  
+    </h1>
 
     <!-- Accordion -->
-    <div class="accordion" id="accordionExample">
+    <div class="accordion m-4" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
           <button
@@ -40,29 +44,39 @@
           aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample"
         >
-          <img
-            style="height: 800px"
-            class="w-100"
-            src="Shree Ram.webp"
-            alt=""
-          />
-          <div>
-            <h3 class="text-center text-primary">Lord Shree Rama</h3>
-            <p>
-              Rama (/ˈrɑːmə/;[4] Sanskrit: राम, IAST: Rāma, Sanskrit: [ˈraːmɐ]
-              ⓘ) is a major deity in Hinduism. He is worshipped as the seventh
-              and one of the most popular avatars of Vishnu.[5] In Rama-centric
-              Hindu traditions, he is considered the Supreme Being. Also
-              considered as the ideal man (maryāda puruṣottama), Rama is the
-              male protagonist of the Hindu epic Ramayana. His birth is
-              celebrated every year on Rama Navami, which falls on the ninth day
-              of the bright half (Shukla Paksha) of the lunar cycle of Chaitra
-              (March–April), the first month in the Hindu calendar.[6][7]
-            </p>
-            <a class=" btn-success btn mt-2 mb-4" href="https://en.wikipedia.org/wiki/Rama"> Learn More</a>
+          <div class="row">
+            <div class="col-sm-5 mt-3">
+              <img
+                style="height: 300px; width: 500px"
+                src="Shree Ram.webp"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-7 mt-3">
+              <h5 class="text-center text-primary">Lord Shree Rama</h5>
+              <p>
+                Rama (/ˈrɑːmə/;[4] Sanskrit: राम, IAST: Rāma, Sanskrit: [ˈraːmɐ]
+                ⓘ) is a major deity in Hinduism. He is worshipped as the seventh
+                and one of the most popular avatars of Vishnu.[5] In
+                Rama-centric Hindu traditions, he is considered the Supreme
+                Being. Also considered as the ideal man (maryāda puruṣottama),
+                Rama is the male protagonist of the Hindu epic Ramayana. His
+                birth is celebrated every year on Rama Navami, which falls on
+                the ninth day of the bright half (Shukla Paksha) of the lunar
+                cycle of Chaitra (March–April), the first month in the Hindu
+                calendar.[6][7]
+              </p>
+              <a
+                class="btn-success btn m-3"
+                href="https://en.wikipedia.org/wiki/Rama"
+              >
+                Learn More</a
+              >
+            </div>
           </div>
         </div>
       </div>
+
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
           <button
@@ -82,10 +96,52 @@
           aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample"
         >
-          <img style="height: 800px" class="w-100" src="Sita.jpg" alt="" />
+          <div class="d-flex">
+            <div class="row">
+              <div class="col-sm-4 m-3">
+                <img src="sita mata.png" alt="" />
+              </div>
+
+              <div class="col-sm-7 m-3">
+                <h5 class="text-center">Sita Maharani</h5>
+
+                <p>
+                  Sita (Sanskrit: सीता; IAST: Sītā), also known as Siya, Jānaki
+                  and Maithili, is a Hindu goddess and the female protagonist of
+                  the Hindu epic Ramayana. Sita is the consort of Rama, the
+                  avatar of god Vishnu, and is regarded as an avatar of goddess
+                  Lakshmi.[12] She is the chief goddess of the Ramanandi
+                  Sampradaya and is the goddess of beauty and devotion. Sita's
+                  birthday is celebrated every year on the occasion of Sita
+                  Navami.[13] Described as the daughter of Bhūmi (the earth),
+                  Sita is brought up as the adopted daughter of King Janaka of
+                  Videha.[14][15] Sita, in her youth, chooses Rama, the prince
+                  of Ayodhya as her husband in a swayamvara. After the
+                  swayamvara, she accompanies her husband to his kingdom but
+                  later chooses to accompany him along with her brother-in-law
+                  Lakshmana, in his exile. While in exile, the trio settles in
+                  the Dandaka forest from where she is abducted by Ravana, the
+                  Rakshasa king of Lanka. She is imprisoned in the garden of
+                  Ashoka Vatika, in Lanka, until she is rescued by Rama, who
+                  slays her captor. After the war, in some versions of the epic,
+                  Rama asks Sita to undergo Agni Pariksha (an ordeal of fire),
+                  by which she proves her chastity, before she is accepted by
+                  Rama, which for the first time makes his brother Lakshmana
+                  angry at him.
+                </p>
+                <a
+                  class="btn btn-success m-3"
+                  href="https://en.wikipedia.org/wiki/Sita"
+                >
+                  Learn More</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="accordion-item">
+
+      <!-- <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button
             class="accordion-button collapsed"
@@ -113,6 +169,118 @@
             overriding our default variables. It's also worth noting that just
             about any HTML can go within the <code>.accordion-body</code>,
             though the transition does limit overflow.
+          </div>
+        </div>
+      </div> -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="true"
+            aria-controls="collapseThree"
+          >
+            Who Is Laxman?
+          </button>
+        </h2>
+
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="row">
+            <div class="col-sm-5 mt-3">
+              <img
+                style="height: 300px; width: 500px"
+                src="laxman ji.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-7 mt-3">
+              <h5 class="text-center text-primary">Shree Laxman</h5>
+              <p>
+                Lakshmana (Sanskrit: लक्ष्मण, lit. 'the one endowed with
+                auspicious signs', IAST: Lakṣmaṇa), also known as Laxmana,
+                Lakhan, Saumitra, and Ramanuja, is the younger brother of Rama
+                in the Hindu epic Ramayana. He is considered as an incarnation
+                of Shesha, the lord of serpents.[2] Lakshmana was married to
+                Urmila, and is known for his loyalty and dedication towards
+                Rama.[3][4] Lakshmana was born to King Dasharatha of Ayodhya and
+                Queen Sumitra. Shatrughna, is his twin brother. He was married
+                to Urmila, after his brother Rama married Sita in her
+                swayamvara. Lakshmana devoted himself to Rama since childhood
+                and accompanied him during his fourteen-year exile, serving him
+                and Sita endlessly. He also played a pivotal role in the war and
+                killed Meghanada. Lakshmana is worshipped in Hinduism, at
+                various places in India, alongside his wife and brother.[5]
+              </p>
+              <a
+                class="btn-success btn m-3"
+                href="https://en.wikipedia.org/wiki/Lakshmana"
+              >
+                Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="true"
+            aria-controls="collapseFour"
+          >
+            Who Is Lord Hanuman?
+          </button>
+        </h2>
+
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="row">
+            <div class="col-sm-5 mt-3">
+              <img
+                style="height: 300px; width: 500px"
+                src="hanuman ji.webp"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-7 mt-3">
+              <h5 class="text-center text-primary">Shree Hanuman</h5>
+              <p>
+                Hanuman (/ˈhʌnʊˌmɑːn/; Sanskrit: हनुमान्, IAST: Hanumān),[5]
+                also known as Maruti, Bajrangabali, and Anjaneya,[6] is a deity
+                in Hinduism, revered as a divine vanara, and a devoted companion
+                of the deity Rama. Central to the Ramayana, Hanuman is
+                celebrated for his unwavering devotion to Rama and is considered
+                a chiranjivi. He is traditionally believed to be the spiritual
+                offspring of the wind deity Vayu, who is said to have played a
+                significant role in his birth.[7][8] In Shaiva tradition, he is
+                regarded to be an incarnation of Shiva, while in most of the
+                Vaishnava traditions he is the son and incarnation of Vayu. His
+                tales are recounted not only in the Ramayana but also in the
+                Mahabharata and various Puranas.
+              </p>
+              <a
+                class="btn-success btn m-3"
+                href="https://en.wikipedia.org/wiki/Hanuman"
+              >
+                Learn More</a
+              >
+            </div>
           </div>
         </div>
       </div>
